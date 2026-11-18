@@ -94,7 +94,7 @@ jobs:
 
       - name: Run DDF Workflow Dispatch
         if: github.event_name == 'workflow_dispatch'
-        uses: deconz-community/ddf-tools-action@v1
+        uses: deconz-community/ddf-tools-action@9b142a5af3872cd786efecc11aaf766cd2b46747 # v1
         with:
           mode: manual
           source-devices-path: 'devices'
@@ -128,7 +128,7 @@ jobs:
 
       - name: Run DDF Push Action
         if: github.event_name == 'push'
-        uses: deconz-community/ddf-tools-action@v1
+        uses: deconz-community/ddf-tools-action@9b142a5af3872cd786efecc11aaf766cd2b46747 # v1
         with:
           mode: push
           source-devices-path: 'devices'
@@ -150,7 +150,7 @@ jobs:
 
       - name: Run DDF Pull Request Interaction
         if: github.event_name == 'pull_request'
-        uses: deconz-community/ddf-tools-action@v1
+        uses: deconz-community/ddf-tools-action@9b142a5af3872cd786efecc11aaf766cd2b46747 # v1
         with:
           mode: pull_request
           source-devices-path: 'devices'
